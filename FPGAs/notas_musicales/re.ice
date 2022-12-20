@@ -31,6 +31,25 @@
           }
         },
         {
+          "id": "8e8df7a9-9b47-4fd2-9685-cbc15e5568b1",
+          "type": "basic.output",
+          "data": {
+            "name": "LEd",
+            "pins": [
+              {
+                "index": "0",
+                "name": "LED7",
+                "value": "37"
+              }
+            ],
+            "virtual": false
+          },
+          "position": {
+            "x": 1080,
+            "y": 304
+          }
+        },
+        {
           "id": "94944b7c-ee53-4ff9-8f3b-719dd5c55a68",
           "type": "basic.output",
           "data": {
@@ -54,28 +73,12 @@
           "type": "basic.constant",
           "data": {
             "name": "Max",
-            "value": "13635",
+            "value": "40816",
             "local": false
           },
           "position": {
             "x": 392,
-            "y": 280
-          }
-        },
-        {
-          "id": "96f62d4a-bae3-499b-934c-739695e5a172",
-          "type": "basic.info",
-          "data": {
-            "info": "## Reto 1: Generar notas musicales",
-            "readonly": true
-          },
-          "position": {
-            "x": 608,
-            "y": 176
-          },
-          "size": {
-            "width": 408,
-            "height": 120
+            "y": 264
           }
         },
         {
@@ -112,6 +115,38 @@
           "size": {
             "width": 96,
             "height": 64
+          }
+        },
+        {
+          "id": "801c73c4-74b8-43b7-b22c-f2caffb4df03",
+          "type": "basic.info",
+          "data": {
+            "info": "## Reto 1: Generar notas musicales: nota Re\n\n",
+            "readonly": true
+          },
+          "position": {
+            "x": 488,
+            "y": 152
+          },
+          "size": {
+            "width": 536,
+            "height": 112
+          }
+        },
+        {
+          "id": "44fb8a10-0208-44f2-b27a-9e8f06404eef",
+          "type": "basic.info",
+          "data": {
+            "info": "M = 12000000/294 = 40816\n\nN = math.ceil(math.log2(40816 -1 )) = 16\n\nNúmero de Bits mínimo = 16",
+            "readonly": true
+          },
+          "position": {
+            "x": 528,
+            "y": 224
+          },
+          "size": {
+            "width": 304,
+            "height": 128
           }
         }
       ],

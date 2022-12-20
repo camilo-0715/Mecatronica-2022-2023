@@ -38,8 +38,8 @@
             "pins": [
               {
                 "index": "0",
-                "name": "D5",
-                "value": "7"
+                "name": "D0",
+                "value": "2"
               }
             ],
             "virtual": false
@@ -54,28 +54,12 @@
           "type": "basic.constant",
           "data": {
             "name": "Max",
-            "value": "13635",
+            "value": "34384",
             "local": false
           },
           "position": {
             "x": 392,
             "y": 280
-          }
-        },
-        {
-          "id": "96f62d4a-bae3-499b-934c-739695e5a172",
-          "type": "basic.info",
-          "data": {
-            "info": "## Reto 1: Generar notas musicales",
-            "readonly": true
-          },
-          "position": {
-            "x": 608,
-            "y": 176
-          },
-          "size": {
-            "width": 408,
-            "height": 120
           }
         },
         {
@@ -112,6 +96,38 @@
           "size": {
             "width": 96,
             "height": 64
+          }
+        },
+        {
+          "id": "f7fb31df-db33-49aa-8766-38527df6bc9e",
+          "type": "basic.info",
+          "data": {
+            "info": "## Reto 1: Generar notas musicales: nota Fa\n",
+            "readonly": true
+          },
+          "position": {
+            "x": 512,
+            "y": 136
+          },
+          "size": {
+            "width": 536,
+            "height": 112
+          }
+        },
+        {
+          "id": "49f93e17-b48f-44c0-b07a-2cc4d69b176f",
+          "type": "basic.info",
+          "data": {
+            "info": "M = 12000000/349 = 34384\n\nN = math.ceil(math.log2(34384 -1 )) = 16\n\nNúmero de Bits mínimo = 16",
+            "readonly": true
+          },
+          "position": {
+            "x": 568,
+            "y": 232
+          },
+          "size": {
+            "width": 336,
+            "height": 120
           }
         }
       ],

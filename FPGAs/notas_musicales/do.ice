@@ -38,8 +38,8 @@
             "pins": [
               {
                 "index": "0",
-                "name": "D5",
-                "value": "7"
+                "name": "D0",
+                "value": "2"
               }
             ],
             "virtual": false
@@ -54,28 +54,28 @@
           "type": "basic.constant",
           "data": {
             "name": "Max",
-            "value": "13635",
+            "value": "45872",
             "local": false
           },
           "position": {
             "x": 392,
-            "y": 280
+            "y": 256
           }
         },
         {
           "id": "96f62d4a-bae3-499b-934c-739695e5a172",
           "type": "basic.info",
           "data": {
-            "info": "## Reto 1: Generar notas musicales",
+            "info": "## Reto 1: Generar notas musicales: nota Do\n",
             "readonly": true
           },
           "position": {
-            "x": 608,
-            "y": 176
+            "x": 512,
+            "y": 120
           },
           "size": {
-            "width": 408,
-            "height": 120
+            "width": 536,
+            "height": 112
           }
         },
         {
@@ -112,6 +112,22 @@
           "size": {
             "width": 96,
             "height": 64
+          }
+        },
+        {
+          "id": "f587c58b-9d39-4996-a476-07c092ab7f49",
+          "type": "basic.info",
+          "data": {
+            "info": "M = 12000000/261.6 = 45872\n\nN = math.ceil(math.log2(45872 -1 )) = 16\n\nNúmero de Bits mínimo = 16",
+            "readonly": true
+          },
+          "position": {
+            "x": 552,
+            "y": 240
+          },
+          "size": {
+            "width": 336,
+            "height": 120
           }
         }
       ],

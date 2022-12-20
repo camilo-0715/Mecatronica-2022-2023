@@ -12,7 +12,7 @@
     "graph": {
       "blocks": [
         {
-          "id": "90f63b3e-115a-4e66-9b8a-301416801a52",
+          "id": "e0621f2d-b672-4f99-8cf2-a8154f560419",
           "type": "basic.output",
           "data": {
             "name": "LEd",
@@ -26,12 +26,12 @@
             "virtual": false
           },
           "position": {
-            "x": 1088,
-            "y": 288
+            "x": 1504,
+            "y": 472
           }
         },
         {
-          "id": "94944b7c-ee53-4ff9-8f3b-719dd5c55a68",
+          "id": "2dc7102d-dc83-495d-ba9c-415c58e9c23f",
           "type": "basic.output",
           "data": {
             "name": "Zumbador",
@@ -45,45 +45,45 @@
             "virtual": false
           },
           "position": {
-            "x": 1088,
-            "y": 400
+            "x": 1504,
+            "y": 584
           }
         },
         {
-          "id": "6b8d1dd8-e413-437c-a5df-c768e88d5d2e",
+          "id": "2a29db73-1b5a-4754-b32e-21ac21893a3c",
           "type": "basic.constant",
           "data": {
             "name": "Max",
-            "value": "13635",
+            "value": "24291",
             "local": false
           },
           "position": {
-            "x": 392,
-            "y": 280
+            "x": 808,
+            "y": 440
           }
         },
         {
-          "id": "96f62d4a-bae3-499b-934c-739695e5a172",
+          "id": "26fbdc54-f238-46f3-ae27-bd24d2816594",
           "type": "basic.info",
           "data": {
-            "info": "## Reto 1: Generar notas musicales",
+            "info": "## Reto 1: Generar notas musicales: nota si\n",
             "readonly": true
           },
           "position": {
-            "x": 608,
-            "y": 176
+            "x": 928,
+            "y": 304
           },
           "size": {
-            "width": 408,
-            "height": 120
+            "width": 536,
+            "height": 112
           }
         },
         {
-          "id": "5661ee79-b1e3-42f9-a924-321a0967e2b3",
+          "id": "67fff464-74b2-4cd9-be49-937c287874d4",
           "type": "2a4730c47e737d8210c8a0d01ec0f76db8f8f474",
           "position": {
-            "x": 632,
-            "y": 400
+            "x": 1048,
+            "y": 584
           },
           "size": {
             "width": 96,
@@ -91,11 +91,11 @@
           }
         },
         {
-          "id": "54341cd8-d829-4933-8710-39b9875dc8c6",
+          "id": "291d8809-7a33-4a8d-ae25-1b596b16888c",
           "type": "651fa32fcf52b534a766fdb2ba638a010338f268",
           "position": {
-            "x": 392,
-            "y": 416
+            "x": 808,
+            "y": 600
           },
           "size": {
             "width": 96,
@@ -103,75 +103,95 @@
           }
         },
         {
-          "id": "0774a14e-3b1b-49e4-80fe-85be4a04c3a1",
+          "id": "ac7a38fc-0266-4c34-a4e1-690456b67c16",
           "type": "48b0f4287fa7df1ecadf0ceb72f376460a7011af",
           "position": {
-            "x": 864,
-            "y": 400
+            "x": 1280,
+            "y": 584
           },
           "size": {
             "width": 96,
             "height": 64
+          }
+        },
+        {
+          "id": "6f74cd0f-6741-4c61-ba93-e0a81780ad20",
+          "type": "basic.info",
+          "data": {
+            "info": "M = 12000000/494 = 24291\n\nN = math.ceil(math.log2(24291 -1 )) = 15\n\nNúmero de Bits mínimo = 15",
+            "readonly": true
+          },
+          "position": {
+            "x": 968,
+            "y": 424
+          },
+          "size": {
+            "width": 336,
+            "height": 120
           }
         }
       ],
       "wires": [
         {
           "source": {
-            "block": "6b8d1dd8-e413-437c-a5df-c768e88d5d2e",
-            "port": "constant-out"
-          },
-          "target": {
-            "block": "54341cd8-d829-4933-8710-39b9875dc8c6",
-            "port": "c0fb4784-5e8c-4f41-9f4b-6daa2e9e03a4"
-          }
-        },
-        {
-          "source": {
-            "block": "54341cd8-d829-4933-8710-39b9875dc8c6",
+            "block": "291d8809-7a33-4a8d-ae25-1b596b16888c",
             "port": "d54af040-d87a-431d-a15f-d5deb4795af5"
           },
           "target": {
-            "block": "5661ee79-b1e3-42f9-a924-321a0967e2b3",
+            "block": "67fff464-74b2-4cd9-be49-937c287874d4",
             "port": "9927ae76-82f3-4064-8535-1e021a970a28"
           },
+          "vertices": [],
           "size": 16
         },
         {
           "source": {
-            "block": "5661ee79-b1e3-42f9-a924-321a0967e2b3",
-            "port": "88e0e872-0460-4ecc-bf26-8a7a5598a024"
+            "block": "2a29db73-1b5a-4754-b32e-21ac21893a3c",
+            "port": "constant-out"
           },
           "target": {
-            "block": "0774a14e-3b1b-49e4-80fe-85be4a04c3a1",
-            "port": "fcbd52d3-d1b8-4cd4-befc-e045d20b91e4"
-          }
+            "block": "291d8809-7a33-4a8d-ae25-1b596b16888c",
+            "port": "c0fb4784-5e8c-4f41-9f4b-6daa2e9e03a4"
+          },
+          "vertices": []
         },
         {
           "source": {
-            "block": "0774a14e-3b1b-49e4-80fe-85be4a04c3a1",
+            "block": "ac7a38fc-0266-4c34-a4e1-690456b67c16",
             "port": "4e8afe74-8f38-4873-97ee-f7585d99a4aa"
           },
           "target": {
-            "block": "94944b7c-ee53-4ff9-8f3b-719dd5c55a68",
+            "block": "2dc7102d-dc83-495d-ba9c-415c58e9c23f",
             "port": "in"
           },
           "vertices": [
             {
-              "x": 1016,
-              "y": 432
+              "x": 1432,
+              "y": 616
             }
           ]
         },
         {
           "source": {
-            "block": "0774a14e-3b1b-49e4-80fe-85be4a04c3a1",
+            "block": "ac7a38fc-0266-4c34-a4e1-690456b67c16",
             "port": "4e8afe74-8f38-4873-97ee-f7585d99a4aa"
           },
           "target": {
-            "block": "90f63b3e-115a-4e66-9b8a-301416801a52",
+            "block": "e0621f2d-b672-4f99-8cf2-a8154f560419",
             "port": "in"
-          }
+          },
+          "vertices": []
+        },
+        {
+          "source": {
+            "block": "67fff464-74b2-4cd9-be49-937c287874d4",
+            "port": "88e0e872-0460-4ecc-bf26-8a7a5598a024"
+          },
+          "target": {
+            "block": "ac7a38fc-0266-4c34-a4e1-690456b67c16",
+            "port": "fcbd52d3-d1b8-4cd4-befc-e045d20b91e4"
+          },
+          "vertices": []
         }
       ]
     }
