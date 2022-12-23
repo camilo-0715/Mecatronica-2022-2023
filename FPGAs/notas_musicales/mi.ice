@@ -31,25 +31,6 @@
           }
         },
         {
-          "id": "e8c9d5c1-0d4c-4972-bced-0b218ad06771",
-          "type": "basic.output",
-          "data": {
-            "name": "LEd",
-            "pins": [
-              {
-                "index": "0",
-                "name": "LED7",
-                "value": "37"
-              }
-            ],
-            "virtual": false
-          },
-          "position": {
-            "x": 1080,
-            "y": 296
-          }
-        },
-        {
           "id": "94944b7c-ee53-4ff9-8f3b-719dd5c55a68",
           "type": "basic.output",
           "data": {
@@ -57,8 +38,8 @@
             "pins": [
               {
                 "index": "0",
-                "name": "D5",
-                "value": "7"
+                "name": "D0",
+                "value": "2"
               }
             ],
             "virtual": false

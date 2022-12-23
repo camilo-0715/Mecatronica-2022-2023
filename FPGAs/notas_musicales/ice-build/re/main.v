@@ -4,7 +4,7 @@
 
 //---- Top entity
 module main #(
- parameter v66db49 = 34384
+ parameter v66db49 = 40816
 ) (
  input vclk,
  output vde1004,

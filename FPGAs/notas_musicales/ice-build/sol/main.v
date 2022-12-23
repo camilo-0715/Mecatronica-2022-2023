@@ -4,44 +4,375 @@
 
 //---- Top entity
 module main #(
- parameter v66db49 = 34384
+ parameter v9e4ef1 = 30612
 ) (
  input vclk,
- output vde1004,
- output vf812bc,
+ output v1d4e31,
+ output v3d4575,
  output [0:6] vinit
 );
- localparam p0 = v66db49;
- wire [0:15] w1;
- wire w2;
+ localparam p2 = v9e4ef1;
+ wire w0;
+ wire w1;
  wire w3;
- wire w4;
+ wire [0:15] w4;
  wire w5;
  wire w6;
- assign vf812bc = w3;
- assign vde1004 = w4;
+ assign v3d4575 = w0;
+ assign v1d4e31 = w1;
  assign w5 = vclk;
  assign w6 = vclk;
- assign w4 = w3;
+ assign w1 = w0;
  assign w6 = w5;
- v2a4730 v83e6fb (
-  .v2dc030(w1),
-  .ve37344(w2),
+ v48b0f4 va79695 (
+  .v4642b6(w0),
+  .vb5e8cd(w3),
   .v6dda25(w5)
  );
  v651fa3 #(
-  .vc5c8ea(p0)
- ) v22a4a6 (
-  .vcd9338(w1)
+  .vc5c8ea(p2)
+ ) v20a27a (
+  .vcd9338(w4)
  );
- v48b0f4 v060b16 (
-  .vb5e8cd(w2),
-  .v4642b6(w3),
+ v2a4730 v4b0712 (
+  .ve37344(w3),
+  .v2dc030(w4),
   .v6dda25(w6)
  );
  assign vinit = 7'b0000000;
 endmodule
 
+//---- Top entity
+module v48b0f4 #(
+ parameter v8bcde4 = 0
+) (
+ input v6dda25,
+ input vb5e8cd,
+ output v4642b6
+);
+ localparam p2 = v8bcde4;
+ wire w0;
+ wire w1;
+ wire w3;
+ wire w4;
+ wire w5;
+ assign v4642b6 = w1;
+ assign w3 = v6dda25;
+ assign w5 = vb5e8cd;
+ assign w1 = w0;
+ v3676a0 v14ac37 (
+  .v0e28cb(w0),
+  .vcbab45(w4)
+ );
+ v883a64 #(
+  .v5462c0(p2)
+ ) v11582e (
+  .v4642b6(w0),
+  .ve4a668(w3),
+  .v27dec4(w4),
+  .vd793aa(w5)
+ );
+endmodule
+
+//---------------------------------------------------
+//-- TFF
+//-- - - - - - - - - - - - - - - - - - - - - - - - --
+//-- System TFF with toggle input: It toogles on every system cycle if the input is active
+//---------------------------------------------------
+//---- Top entity
+module v3676a0 (
+ input v0e28cb,
+ output vcbab45
+);
+ wire w0;
+ wire w1;
+ assign w0 = v0e28cb;
+ assign vcbab45 = w1;
+ v3676a0_vd54ca1 vd54ca1 (
+  .a(w0),
+  .q(w1)
+ );
+endmodule
+
+//---------------------------------------------------
+//-- NOT
+//-- - - - - - - - - - - - - - - - - - - - - - - - --
+//-- NOT gate (Verilog implementation)
+//---------------------------------------------------
+
+module v3676a0_vd54ca1 (
+ input a,
+ output q
+);
+ //-- NOT Gate
+ assign q = ~a;
+ 
+ 
+endmodule
+//---- Top entity
+module v883a64 #(
+ parameter v5462c0 = 0
+) (
+ input ve4a668,
+ input v27dec4,
+ input vd793aa,
+ output v4642b6
+);
+ localparam p1 = v5462c0;
+ wire w0;
+ wire w2;
+ wire w3;
+ wire w4;
+ wire w5;
+ wire w6;
+ assign w2 = ve4a668;
+ assign w3 = v27dec4;
+ assign v4642b6 = w5;
+ assign w6 = vd793aa;
+ assign w5 = w4;
+ va40d2f v9ff767 (
+  .v030ad0(w0),
+  .vb192d0(w3),
+  .v27dec4(w4),
+  .v2d3366(w6)
+ );
+ v053dc2 #(
+  .v71e305(p1)
+ ) v89c757 (
+  .vf54559(w0),
+  .va4102a(w2),
+  .ve8318d(w4)
+ );
+endmodule
+
+//---------------------------------------------------
+//-- 1-bit-reg
+//-- - - - - - - - - - - - - - - - - - - - - - - - --
+//-- Reg: 1-Bit register
+//---------------------------------------------------
+//---- Top entity
+module va40d2f (
+ input v27dec4,
+ input vb192d0,
+ input v2d3366,
+ output v030ad0
+);
+ wire w0;
+ wire w1;
+ wire w2;
+ wire w3;
+ assign v030ad0 = w0;
+ assign w1 = v2d3366;
+ assign w2 = v27dec4;
+ assign w3 = vb192d0;
+ vd0c4e5 v0f3fef (
+  .v030ad0(w0),
+  .v2d3366(w1),
+  .vb192d0(w2),
+  .v27dec4(w3)
+ );
+endmodule
+
+//---------------------------------------------------
+//-- MuxF-2-1
+//-- - - - - - - - - - - - - - - - - - - - - - - - --
+//-- 2-to-1 Multplexer (1-bit channels). Fippled version
+//---------------------------------------------------
+//---- Top entity
+module vd0c4e5 (
+ input v27dec4,
+ input vb192d0,
+ input v2d3366,
+ output v030ad0
+);
+ wire w0;
+ wire w1;
+ wire w2;
+ wire w3;
+ wire w4;
+ wire w5;
+ wire w6;
+ wire w7;
+ assign v030ad0 = w0;
+ assign w2 = v2d3366;
+ assign w3 = v2d3366;
+ assign w6 = v27dec4;
+ assign w7 = vb192d0;
+ assign w3 = w2;
+ v873425 vaaee1f (
+  .vcbab45(w0),
+  .v0e28cb(w1),
+  .v3ca442(w4)
+ );
+ vba518e v569873 (
+  .vcbab45(w1),
+  .v3ca442(w2),
+  .v0e28cb(w6)
+ );
+ v3676a0 v1f00ae (
+  .v0e28cb(w3),
+  .vcbab45(w5)
+ );
+ vba518e vc8527f (
+  .vcbab45(w4),
+  .v3ca442(w5),
+  .v0e28cb(w7)
+ );
+endmodule
+
+//---------------------------------------------------
+//-- Mux-2-1
+//-- - - - - - - - - - - - - - - - - - - - - - - - --
+//-- 2-to-1 Multplexer (1-bit channels)
+//---------------------------------------------------
+//---- Top entity
+module v873425 (
+ input v0e28cb,
+ input v3ca442,
+ output vcbab45
+);
+ wire w0;
+ wire w1;
+ wire w2;
+ assign w0 = v0e28cb;
+ assign w1 = v3ca442;
+ assign vcbab45 = w2;
+ v873425_vf4938a vf4938a (
+  .a(w0),
+  .b(w1),
+  .c(w2)
+ );
+endmodule
+
+//---------------------------------------------------
+//-- OR2
+//-- - - - - - - - - - - - - - - - - - - - - - - - --
+//-- OR2: Two bits input OR gate
+//---------------------------------------------------
+
+module v873425_vf4938a (
+ input a,
+ input b,
+ output c
+);
+ //-- OR Gate
+ //-- Verilog implementation
+ 
+ assign c = a | b;
+ 
+ 
+endmodule
+//---- Top entity
+module vba518e (
+ input v0e28cb,
+ input v3ca442,
+ output vcbab45
+);
+ wire w0;
+ wire w1;
+ wire w2;
+ assign w0 = v0e28cb;
+ assign w1 = v3ca442;
+ assign vcbab45 = w2;
+ vba518e_vf4938a vf4938a (
+  .a(w0),
+  .b(w1),
+  .c(w2)
+ );
+endmodule
+
+//---------------------------------------------------
+//-- AND2
+//-- - - - - - - - - - - - - - - - - - - - - - - - --
+//-- Two bits input And gate
+//---------------------------------------------------
+
+module vba518e_vf4938a (
+ input a,
+ input b,
+ output c
+);
+ //-- AND gate
+ //-- Verilog implementation
+ 
+ assign c = a & b;
+ 
+endmodule
+//---- Top entity
+module v053dc2 #(
+ parameter v71e305 = 0
+) (
+ input va4102a,
+ input vf54559,
+ output ve8318d
+);
+ localparam p2 = v71e305;
+ wire w0;
+ wire w1;
+ wire w3;
+ assign w0 = va4102a;
+ assign ve8318d = w1;
+ assign w3 = vf54559;
+ v053dc2_vb8adf8 #(
+  .INI(p2)
+ ) vb8adf8 (
+  .clk(w0),
+  .q(w1),
+  .d(w3)
+ );
+endmodule
+
+//---------------------------------------------------
+//-- DFF
+//-- - - - - - - - - - - - - - - - - - - - - - - - --
+//-- D Flip-flop (verilog implementation)
+//---------------------------------------------------
+
+module v053dc2_vb8adf8 #(
+ parameter INI = 0
+) (
+ input clk,
+ input d,
+ output q
+);
+ //-- Initial value
+ reg q = INI;
+ 
+ //-- Capture the input data  
+ //-- on the rising edge of  
+ //-- the system clock
+ always @(posedge clk)
+   q <= d;
+endmodule
+//---- Top entity
+module v651fa3 #(
+ parameter vc5c8ea = 0
+) (
+ output [15:0] vcd9338
+);
+ localparam p0 = vc5c8ea;
+ wire [0:15] w1;
+ assign vcd9338 = w1;
+ v651fa3_v465065 #(
+  .VALUE(p0)
+ ) v465065 (
+  .k(w1)
+ );
+endmodule
+
+//---------------------------------------------------
+//-- 16-bits-gen-constant
+//-- - - - - - - - - - - - - - - - - - - - - - - - --
+//-- Generic: 16-bits generic constant
+//---------------------------------------------------
+
+module v651fa3_v465065 #(
+ parameter VALUE = 0
+) (
+ output [15:0] k
+);
+ assign k = VALUE;
+endmodule
 //---- Top entity
 module v2a4730 (
  input v6dda25,
@@ -430,118 +761,6 @@ endmodule
 //-- DFF-rst-x01: D Flip flop with reset input. When rst=1, the DFF is 0
 //---------------------------------------------------
 //---- Top entity
-module v3676a0 (
- input v0e28cb,
- output vcbab45
-);
- wire w0;
- wire w1;
- assign w0 = v0e28cb;
- assign vcbab45 = w1;
- v3676a0_vd54ca1 vd54ca1 (
-  .a(w0),
-  .q(w1)
- );
-endmodule
-
-//---------------------------------------------------
-//-- NOT
-//-- - - - - - - - - - - - - - - - - - - - - - - - --
-//-- NOT gate (Verilog implementation)
-//---------------------------------------------------
-
-module v3676a0_vd54ca1 (
- input a,
- output q
-);
- //-- NOT Gate
- assign q = ~a;
- 
- 
-endmodule
-//---- Top entity
-module vba518e (
- input v0e28cb,
- input v3ca442,
- output vcbab45
-);
- wire w0;
- wire w1;
- wire w2;
- assign w0 = v0e28cb;
- assign w1 = v3ca442;
- assign vcbab45 = w2;
- vba518e_vf4938a vf4938a (
-  .a(w0),
-  .b(w1),
-  .c(w2)
- );
-endmodule
-
-//---------------------------------------------------
-//-- AND2
-//-- - - - - - - - - - - - - - - - - - - - - - - - --
-//-- Two bits input And gate
-//---------------------------------------------------
-
-module vba518e_vf4938a (
- input a,
- input b,
- output c
-);
- //-- AND gate
- //-- Verilog implementation
- 
- assign c = a & b;
- 
-endmodule
-//---- Top entity
-module v053dc2 #(
- parameter v71e305 = 0
-) (
- input va4102a,
- input vf54559,
- output ve8318d
-);
- localparam p2 = v71e305;
- wire w0;
- wire w1;
- wire w3;
- assign w0 = va4102a;
- assign ve8318d = w1;
- assign w3 = vf54559;
- v053dc2_vb8adf8 #(
-  .INI(p2)
- ) vb8adf8 (
-  .clk(w0),
-  .q(w1),
-  .d(w3)
- );
-endmodule
-
-//---------------------------------------------------
-//-- DFF
-//-- - - - - - - - - - - - - - - - - - - - - - - - --
-//-- D Flip-flop (verilog implementation)
-//---------------------------------------------------
-
-module v053dc2_vb8adf8 #(
- parameter INI = 0
-) (
- input clk,
- input d,
- output q
-);
- //-- Initial value
- reg q = INI;
- 
- //-- Capture the input data  
- //-- on the rising edge of  
- //-- the system clock
- always @(posedge clk)
-   q <= d;
-endmodule
-//---- Top entity
 module v852bc8 (
  input [15:0] v91b9c1,
  output [3:0] vfc89f9,
@@ -692,35 +911,6 @@ endmodule
 //-- - - - - - - - - - - - - - - - - - - - - - - - --
 //-- AdderK-16bit: Adder of 16-bit operand and 16-bit constant
 //---------------------------------------------------
-//---- Top entity
-module v651fa3 #(
- parameter vc5c8ea = 0
-) (
- output [15:0] vcd9338
-);
- localparam p0 = vc5c8ea;
- wire [0:15] w1;
- assign vcd9338 = w1;
- v651fa3_v465065 #(
-  .VALUE(p0)
- ) v465065 (
-  .k(w1)
- );
-endmodule
-
-//---------------------------------------------------
-//-- 16-bits-gen-constant
-//-- - - - - - - - - - - - - - - - - - - - - - - - --
-//-- Generic: 16-bits generic constant
-//---------------------------------------------------
-
-module v651fa3_v465065 #(
- parameter VALUE = 0
-) (
- output [15:0] k
-);
- assign k = VALUE;
-endmodule
 //---- Top entity
 module vbc66d7 (
  input [15:0] v1489e0,
@@ -1117,43 +1307,6 @@ module vd12401_vf4938a (
  //-- Verilog implementation
  
  assign c = a ^ b;
- 
-endmodule
-//---- Top entity
-module v873425 (
- input v0e28cb,
- input v3ca442,
- output vcbab45
-);
- wire w0;
- wire w1;
- wire w2;
- assign w0 = v0e28cb;
- assign w1 = v3ca442;
- assign vcbab45 = w2;
- v873425_vf4938a vf4938a (
-  .a(w0),
-  .b(w1),
-  .c(w2)
- );
-endmodule
-
-//---------------------------------------------------
-//-- OR2
-//-- - - - - - - - - - - - - - - - - - - - - - - - --
-//-- OR2: Two bits input OR gate
-//---------------------------------------------------
-
-module v873425_vf4938a (
- input a,
- input b,
- output c
-);
- //-- OR Gate
- //-- Verilog implementation
- 
- assign c = a | b;
- 
  
 endmodule
 //---- Top entity
@@ -1639,157 +1792,4 @@ endmodule
 //-- AND4
 //-- - - - - - - - - - - - - - - - - - - - - - - - --
 //-- Three bits input And gate
-//---------------------------------------------------
-//---- Top entity
-module v48b0f4 #(
- parameter v8bcde4 = 0
-) (
- input v6dda25,
- input vb5e8cd,
- output v4642b6
-);
- localparam p2 = v8bcde4;
- wire w0;
- wire w1;
- wire w3;
- wire w4;
- wire w5;
- assign v4642b6 = w1;
- assign w3 = v6dda25;
- assign w5 = vb5e8cd;
- assign w1 = w0;
- v3676a0 v14ac37 (
-  .v0e28cb(w0),
-  .vcbab45(w4)
- );
- v883a64 #(
-  .v5462c0(p2)
- ) v11582e (
-  .v4642b6(w0),
-  .ve4a668(w3),
-  .v27dec4(w4),
-  .vd793aa(w5)
- );
-endmodule
-
-//---------------------------------------------------
-//-- TFF
-//-- - - - - - - - - - - - - - - - - - - - - - - - --
-//-- System TFF with toggle input: It toogles on every system cycle if the input is active
-//---------------------------------------------------
-//---- Top entity
-module v883a64 #(
- parameter v5462c0 = 0
-) (
- input ve4a668,
- input v27dec4,
- input vd793aa,
- output v4642b6
-);
- localparam p1 = v5462c0;
- wire w0;
- wire w2;
- wire w3;
- wire w4;
- wire w5;
- wire w6;
- assign w2 = ve4a668;
- assign w3 = v27dec4;
- assign v4642b6 = w5;
- assign w6 = vd793aa;
- assign w5 = w4;
- va40d2f v9ff767 (
-  .v030ad0(w0),
-  .vb192d0(w3),
-  .v27dec4(w4),
-  .v2d3366(w6)
- );
- v053dc2 #(
-  .v71e305(p1)
- ) v89c757 (
-  .vf54559(w0),
-  .va4102a(w2),
-  .ve8318d(w4)
- );
-endmodule
-
-//---------------------------------------------------
-//-- 1-bit-reg
-//-- - - - - - - - - - - - - - - - - - - - - - - - --
-//-- Reg: 1-Bit register
-//---------------------------------------------------
-//---- Top entity
-module va40d2f (
- input v27dec4,
- input vb192d0,
- input v2d3366,
- output v030ad0
-);
- wire w0;
- wire w1;
- wire w2;
- wire w3;
- assign v030ad0 = w0;
- assign w1 = v2d3366;
- assign w2 = v27dec4;
- assign w3 = vb192d0;
- vd0c4e5 v0f3fef (
-  .v030ad0(w0),
-  .v2d3366(w1),
-  .vb192d0(w2),
-  .v27dec4(w3)
- );
-endmodule
-
-//---------------------------------------------------
-//-- MuxF-2-1
-//-- - - - - - - - - - - - - - - - - - - - - - - - --
-//-- 2-to-1 Multplexer (1-bit channels). Fippled version
-//---------------------------------------------------
-//---- Top entity
-module vd0c4e5 (
- input v27dec4,
- input vb192d0,
- input v2d3366,
- output v030ad0
-);
- wire w0;
- wire w1;
- wire w2;
- wire w3;
- wire w4;
- wire w5;
- wire w6;
- wire w7;
- assign v030ad0 = w0;
- assign w2 = v2d3366;
- assign w3 = v2d3366;
- assign w6 = v27dec4;
- assign w7 = vb192d0;
- assign w3 = w2;
- v873425 vaaee1f (
-  .vcbab45(w0),
-  .v0e28cb(w1),
-  .v3ca442(w4)
- );
- vba518e v569873 (
-  .vcbab45(w1),
-  .v3ca442(w2),
-  .v0e28cb(w6)
- );
- v3676a0 v1f00ae (
-  .v0e28cb(w3),
-  .vcbab45(w5)
- );
- vba518e vc8527f (
-  .vcbab45(w4),
-  .v3ca442(w5),
-  .v0e28cb(w7)
- );
-endmodule
-
-//---------------------------------------------------
-//-- Mux-2-1
-//-- - - - - - - - - - - - - - - - - - - - - - - - --
-//-- 2-to-1 Multplexer (1-bit channels)
 //---------------------------------------------------

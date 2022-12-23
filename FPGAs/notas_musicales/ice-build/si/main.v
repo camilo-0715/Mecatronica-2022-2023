@@ -4,39 +4,39 @@
 
 //---- Top entity
 module main #(
- parameter v66db49 = 34384
+ parameter vc8df16 = 24291
 ) (
  input vclk,
- output vde1004,
- output vf812bc,
+ output v594960,
+ output vf723ea,
  output [0:6] vinit
 );
- localparam p0 = v66db49;
- wire [0:15] w1;
+ localparam p1 = vc8df16;
+ wire [0:15] w0;
  wire w2;
  wire w3;
  wire w4;
  wire w5;
  wire w6;
- assign vf812bc = w3;
- assign vde1004 = w4;
+ assign vf723ea = w2;
+ assign v594960 = w3;
  assign w5 = vclk;
  assign w6 = vclk;
- assign w4 = w3;
+ assign w3 = w2;
  assign w6 = w5;
- v2a4730 v83e6fb (
-  .v2dc030(w1),
-  .ve37344(w2),
+ v2a4730 vb1f15a (
+  .v2dc030(w0),
+  .ve37344(w4),
   .v6dda25(w5)
  );
  v651fa3 #(
-  .vc5c8ea(p0)
- ) v22a4a6 (
-  .vcd9338(w1)
+  .vc5c8ea(p1)
+ ) v08f201 (
+  .vcd9338(w0)
  );
- v48b0f4 v060b16 (
-  .vb5e8cd(w2),
-  .v4642b6(w3),
+ v48b0f4 v1497be (
+  .v4642b6(w2),
+  .vb5e8cd(w4),
   .v6dda25(w6)
  );
  assign vinit = 7'b0000000;
