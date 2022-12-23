@@ -8,7 +8,7 @@
    version="1.1"
    id="svg219"
    sodipodi:docname="cadena_eslabones.svg"
-   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   inkscape:version="1.2.1 (9c6d41e, 2022-07-14)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -30,14 +30,16 @@
      inkscape:snap-bbox-edge-midpoints="true"
      inkscape:snap-grids="false"
      inkscape:zoom="0.46110743"
-     inkscape:cx="255.90566"
-     inkscape:cy="582.29381"
+     inkscape:cx="178.91709"
+     inkscape:cy="630.00503"
      inkscape:window-width="1862"
-     inkscape:window-height="904"
+     inkscape:window-height="1016"
      inkscape:window-x="58"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer2" />
+     inkscape:current-layer="layer2"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1" />
   <defs
      id="defs216">
     <marker
@@ -118,7 +120,7 @@
      style="display:inline">
     <g
        id="g188"
-       transform="rotate(39.559169,279.6971,249.06838)">
+       transform="matrix(0.42403201,0.3502811,-0.3502811,0.42403201,177.20884,-0.27869539)">
       <g
          id="g177">
         <g
@@ -148,7 +150,7 @@
     </g>
     <g
        id="g188-1"
-       transform="rotate(66.785495,-8.5299628,78.714695)">
+       transform="matrix(0.21679602,0.50546957,-0.50546957,0.21679602,91.677679,96.858957)">
       <g
          id="g177-0">
         <g
@@ -178,7 +180,7 @@
     </g>
     <g
        id="g188-6"
-       transform="rotate(0.58054683,1960.6455,-10355.96)">
+       transform="matrix(0.54997177,0.00557275,-0.00557275,0.54997177,-2.9238498,55.100695)">
       <g
          id="g177-1">
         <g
@@ -208,7 +210,7 @@
     </g>
     <g
        id="g188-9"
-       transform="rotate(124.07353,126.74981,119.66654)">
+       transform="matrix(-0.30814101,0.45557559,-0.45557559,-0.30814101,218.01838,111.26592)">
       <g
          id="g177-2">
         <g
@@ -255,71 +257,71 @@
          sodipodi:role="line" /></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18.8775px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ff8080;stroke:#000000;stroke-width:0.564999"
-       x="49.094261"
-       y="210.88426"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.3826px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ff8080;stroke:#000000;stroke-width:0.310749"
+       x="81.733864"
+       y="182.30562"
        id="text39878"><tspan
          sodipodi:role="line"
          id="tspan39876"
-         style="fill:#ff0000;stroke-width:0.565"
-         x="49.094261"
-         y="210.88426">Eslabon 1</tspan><tspan
+         style="fill:#ff0000;stroke-width:0.31075"
+         x="81.733864"
+         y="182.30562">Eslabon 1</tspan><tspan
          sodipodi:role="line"
-         style="stroke-width:0.565"
-         x="49.094261"
-         y="234.48112"
+         style="stroke-width:0.31075"
+         x="81.733864"
+         y="195.28387"
          id="tspan40848" /></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18.8775px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ff0000;stroke:#000000;stroke-width:0.564999"
-       x="-112.79506"
-       y="69.138252"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.3826px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ff0000;stroke:#000000;stroke-width:0.310749"
+       x="7.6135259"
+       y="96.312111"
        id="text45712"><tspan
          sodipodi:role="line"
          id="tspan45710"
-         style="stroke-width:0.565"
-         x="-112.79506"
-         y="69.138252">Eslabon 2</tspan><tspan
+         style="stroke-width:0.31075"
+         x="7.6135259"
+         y="96.312111">Eslabon 2</tspan><tspan
          sodipodi:role="line"
-         style="stroke-width:0.565"
-         x="-112.79506"
-         y="92.73513"
+         style="stroke-width:0.31075"
+         x="7.6135259"
+         y="109.29036"
          id="tspan51750" /></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18.8775px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;display:inline;fill:#ff0000;stroke:#000000;stroke-width:0.564999"
-       x="100.92574"
-       y="145.99002"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.3826px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;display:inline;fill:#ff0000;stroke:#000000;stroke-width:0.310749"
+       x="110.24117"
+       y="146.61378"
        id="text45712-3"
-       inkscape:transform-center-x="35.704918"
-       inkscape:transform-center-y="-21.504098"><tspan
+       inkscape:transform-center-x="19.637778"
+       inkscape:transform-center-y="-11.827249"><tspan
          sodipodi:role="line"
          id="tspan45710-7"
-         style="stroke-width:0.565"
-         x="100.92574"
-         y="145.99002">Eslabon 3</tspan><tspan
+         style="stroke-width:0.31075"
+         x="110.24117"
+         y="146.61378">Eslabon 3</tspan><tspan
          sodipodi:role="line"
-         style="stroke-width:0.565"
-         x="100.92574"
-         y="169.5869"
+         style="stroke-width:0.31075"
+         x="110.24117"
+         y="159.59204"
          id="tspan52178" /></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18.8775px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;display:inline;fill:#ff0000;stroke:#000000;stroke-width:0.564999"
-       x="234.36143"
-       y="8.7037611"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.3826px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;display:inline;fill:#ff0000;stroke:#000000;stroke-width:0.310749"
+       x="146.33383"
+       y="43.56395"
        id="text45712-3-2"
-       inkscape:transform-center-x="35.704918"
-       inkscape:transform-center-y="-21.504098"><tspan
+       inkscape:transform-center-x="19.637768"
+       inkscape:transform-center-y="-11.827245"><tspan
          sodipodi:role="line"
          id="tspan45710-7-5"
-         style="stroke-width:0.565"
-         x="234.36143"
-         y="8.7037611">Eslabon 4</tspan><tspan
+         style="stroke-width:0.31075"
+         x="146.33383"
+         y="43.56395">Eslabon 4</tspan><tspan
          sodipodi:role="line"
-         style="stroke-width:0.565"
-         x="234.36143"
-         y="32.300636"
+         style="stroke-width:0.31075"
+         x="146.33383"
+         y="56.542198"
          id="tspan52594" /></text>
     <text
        xml:space="preserve"
@@ -329,22 +331,22 @@
        id="text47596"><tspan
          sodipodi:role="line"
          id="tspan47594"
-         style="stroke-width:0.565"></tspan></text>
+         style="stroke-width:0.565" /></text>
     <path
-       style="fill:#ff0000;stroke:#000000;stroke-width:0.564999;marker-end:url(#Arrow1Lend)"
-       d="M 71.551238,219.126 C 12.357342,255.05275 12.357342,255.05275 12.357342,255.05275"
+       style="fill:#ff0000;stroke:#000000;stroke-width:0.310749;marker-end:url(#Arrow1Lend)"
+       d="M 94.085195,186.83857 C 61.528552,206.59828 61.528552,206.59828 61.528552,206.59828"
        id="path57647" />
     <path
-       style="display:inline;fill:#ff0000;stroke:#000000;stroke-width:0.564999;marker-end:url(#Arrow1Lend-5)"
-       d="m -71.448041,69.896759 c 51.154426,46.667691 51.154426,46.667691 51.154426,46.667691"
+       style="display:inline;fill:#ff0000;stroke:#000000;stroke-width:0.310749;marker-end:url(#Arrow1Lend-5)"
+       d="m 37.813782,102.46729 c 28.134935,25.66723 28.134935,25.66723 28.134935,25.66723"
        id="path57647-9" />
     <path
-       style="display:inline;fill:#ff0000;stroke:#000000;stroke-width:0.564999;marker-end:url(#Arrow1Lend-5-9)"
-       d="m 126.6383,83.958104 c 51.15442,46.667686 51.15442,46.667686 51.15442,46.667686"
+       style="display:inline;fill:#ff0000;stroke:#000000;stroke-width:0.310749;marker-end:url(#Arrow1Lend-5-9)"
+       d="m 124.38308,112.49623 c 28.13493,25.66723 28.13493,25.66723 28.13493,25.66723"
        id="path57647-9-0" />
     <path
-       style="display:inline;fill:#ff0000;stroke:#000000;stroke-width:0.564999;marker-end:url(#Arrow1Lend-5-9-2)"
-       d="M 277.01207,9.4190364 C 236.45429,65.541351 236.45429,65.541351 236.45429,65.541351"
+       style="display:inline;fill:#ff0000;stroke:#000000;stroke-width:0.310749;marker-end:url(#Arrow1Lend-5-9-2)"
+       d="M 178.97246,46.252551 C 156.66569,77.11982 156.66569,77.11982 156.66569,77.11982"
        id="path57647-9-0-9" />
   </g>
 </svg>
