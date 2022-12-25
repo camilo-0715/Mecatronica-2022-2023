@@ -1,0 +1,6 @@
+
+#Primero habilitar ssh con 
+sudo systemctl enable ssh  
+
+# Luego lanzar libree office con el flag de sockets activado
+soffice --impress --accept="socket,host=localhost,port=2002;urp;StarOffice.ServiceManager"
